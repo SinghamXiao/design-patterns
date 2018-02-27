@@ -7,15 +7,15 @@ public class ConcreteObserver implements Observer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ConcreteObserver.class);
 
-    private String name;
+    private String user;
 
-    public ConcreteObserver(String name) {
-        this.name = name;
+    public ConcreteObserver(String user) {
+        this.user = user;
     }
 
     @Override
     public void update(String message) {
-        LOGGER.info(name + ": " + message);
+        LOGGER.info(user + ": " + message);
     }
 
 }
